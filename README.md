@@ -3,5 +3,5 @@
 # webhook enabled
 # testing webhook to openshift integration
 # first test webhook successful between github and openshift without SSL, json type
-# Lets verify weather the webhook is created porparly or not
-test and verify 
+# Lets verify weather the webhook is created porparly or 
+
