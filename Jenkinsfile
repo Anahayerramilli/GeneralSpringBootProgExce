@@ -1,13 +1,8 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'Maven3'           // Use the name you configured under Global Tool Config
-        jdk 'JDK17'              // Optional: Only if you installed a JDK via Jenkins tools
-    }
-
     environment {
-        SONAR_TOKEN = credentials('sonar-token')  // Uses the secret token from Jenkins credentials
+        SONAR_TOKEN = credentials('sonar-token')
     }
 
     stages {
