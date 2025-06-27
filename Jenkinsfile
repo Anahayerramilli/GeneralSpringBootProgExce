@@ -18,7 +18,8 @@ pipeline {
                     sh """
                         mvn clean verify sonar:sonar \
                         -Dsonar.projectKey=GeneralSpringBootProgExce \
-                        -Dsonar.login=$SONAR_TOKEN
+                        -Dsonar.token=$SONAR_TOKEN
+
                     """
                 }
             }
